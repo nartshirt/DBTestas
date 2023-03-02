@@ -1,4 +1,4 @@
-package asta.dbTest2.data;
+package com.asta.dbTest2.data;
 
 import org.bson.types.ObjectId;
 
@@ -6,11 +6,12 @@ public class User {
     private ObjectId id;
     private String name;
     private String surname;
-    private int balance;
+    private double balance;
 
-    public User (){}
+    public User() {
+    }
 
-    public User(ObjectId id, String name, String surname, int balance) {
+    public User(ObjectId id, String name, String surname, double balance) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -41,11 +42,11 @@ public class User {
         this.surname = surname;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
